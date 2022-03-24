@@ -10,11 +10,14 @@ using APIClientes.Data;
 using APIClientes.Modelo;
 using APIClientes.Repositorio;
 using APIClientes.Modelo.DTo;
+using Microsoft.AspNetCore.Authorization;
 
 namespace APIClientes.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    // Para que alguien pueda acceder a cualquier de los metetodos debe estar autorizado
+    [Authorize]
     public class ClientesController : ControllerBase
     {
         private readonly IClienteRepositorio _clienteRepositorio;
