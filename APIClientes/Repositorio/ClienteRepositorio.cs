@@ -31,7 +31,7 @@ namespace APIClientes.Repositorio
                 await _db.Clientes.AddAsync(cliente);
             }
             await _db.SaveChangesAsync();
-            return _mapper.Map<ClienteDTo, ClienteDTo>(cliente);
+            return _mapper.Map<Cliente, ClienteDTo>(cliente);
         }
 
         public async Task<bool> DeleteClienteById(int id)
