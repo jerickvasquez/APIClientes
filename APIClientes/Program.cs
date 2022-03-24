@@ -24,6 +24,9 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 //Con esta linea ya podemos usar cliente repositorio en en ClientesController
 builder.Services.AddScoped<IClienteRepositorio, ClienteRepositorio>();
 
+//Con esta linea ya podemos usar user repositorio en en UsersController
+builder.Services.AddScoped<IUserRepositorio, UserRepositorio>();    
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
