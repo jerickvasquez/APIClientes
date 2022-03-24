@@ -11,7 +11,7 @@ namespace APIClientes.Repositorio
 
         Task<ClienteDTo> CreateUpdate(ClienteDTo clienteDTo);
 
-        Task<bool> DeleteClienteById(int id);
+        Task<bool> DeleteCliente(int id);
 
     }
 }

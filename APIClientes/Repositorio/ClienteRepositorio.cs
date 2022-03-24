@@ -34,7 +34,7 @@ namespace APIClientes.Repositorio
             return _mapper.Map<Cliente, ClienteDTo>(cliente);
         }
 
-        public async Task<bool> DeleteClienteById(int id)
+        public async Task<bool> DeleteCliente(int id)
         {
             try
             {
